@@ -7,12 +7,12 @@ require('dotenv').config();
  */
 const createEmailTransporter = () => {
   return nodemailer.createTransport({
-    host: "smtp.hostinger.com",
-    port: 465,
-    secure: true,
+    host: process.env.MAIL_HOST,
+    // port: 3000,
+    service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD
+      user: "adhamsaeed0500@gmail.com",
+      pass: "ekpi egax wtso rkho"
     }
   });
 };

@@ -37,8 +37,8 @@ const sendContactEmail = async ({ name, phone, service }, photoFile = null) => {
   const hasPhoto = !!photoFile;
 
   const mailOptions = {
-    from: process.env.EMAIL_USER | 'adhamsaeed0500@gmail.com',
-    to: RECIPIENT_EMAIL,
+    from: 'adhamsaeed0500@gmail.com',
+    to: 'adhamsaeed0500@gmail.com',
     subject: generateEmailSubject(service),
     html: generateEmailTemplate({ name, phone, service, hasPhoto }),
     attachments: prepareAttachments(photoFile)
