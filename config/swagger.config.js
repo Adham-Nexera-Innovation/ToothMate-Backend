@@ -20,7 +20,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: `http://localhost:${PORT}`,
+        url: `https://toothmate-backend-production.up.railway.app`,
         description: 'Development server'
       }
     ],
