@@ -8,7 +8,6 @@ require('dotenv').config();
 const createEmailTransporter = () => {
   return nodemailer.createTransport({
     host: process.env.MAIL_HOST,
-    // port: 3000,
     service: "gmail",
     auth: {
       user: "adhamsaeed0500@gmail.com",
@@ -20,5 +19,6 @@ const createEmailTransporter = () => {
 module.exports = {
   createEmailTransporter
 };
+
 
 

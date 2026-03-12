@@ -22,6 +22,7 @@ const sendMail = async (req, res, next) => {
       messageId: emailInfo.messageId
     });
   } catch (error) {
+    console.log(error)
     next(error);
   }
 };
